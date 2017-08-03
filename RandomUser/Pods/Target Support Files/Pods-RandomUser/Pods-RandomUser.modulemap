@@ -1,0 +1,6 @@
+framework module Pods_RandomUser {
+  umbrella header "Pods-RandomUser-umbrella.h"
+
+  export *
+  module * { export * }
+}

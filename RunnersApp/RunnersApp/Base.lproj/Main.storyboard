@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AmericanTypewriter.ttc">
+            <string>AmericanTypewriter</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RunnersApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="63F-Je-f6M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Runner App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMU-kZ-W3l">
+                                <rect key="frame" x="85.5" y="28" width="204.5" height="40"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
+                                <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" translatesAutoresizingMaskIntoConstraints="NO" id="gcl-B3-5hh">
+                                <rect key="frame" x="87" y="126" width="203" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="LrD-TY-6b9"/>
+                                    <constraint firstAttribute="width" constant="203" id="ZWA-rq-aJs"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="44" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KG5-8l-naA">
+                                <rect key="frame" x="152" y="197" width="73" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="50"/>
+                                <color key="textColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oP-lJ-wqZ">
+                                <rect key="frame" x="97" y="387" width="180" height="50"/>
+                                <color key="backgroundColor" red="0.6946682333946228" green="0.47675764560699463" blue="0.15721762180328369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="DCL-MS-VM7"/>
+                                    <constraint firstAttribute="height" constant="50" id="PK8-HE-p9D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="tintColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="playBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7C-a7-LA0"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RO5-cO-xuK">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.99963909387588501" green="1" blue="0.99975615739822388" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem title="Stop" id="RY8-aW-QRl">
+                                        <connections>
+                                            <action selector="stopBtnTapped:" destination="BYZ-38-t0r" id="KWA-9o-kOw"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3cb-Ra-cnz"/>
+                                    <barButtonItem title="Reset" id="zaN-O7-Xla">
+                                        <connections>
+                                            <action selector="resetBtnTapped:" destination="BYZ-38-t0r" id="sIw-ZU-TIa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="RO5-cO-xuK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4Ec-se-Pbc"/>
+                            <constraint firstItem="3oP-lJ-wqZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8ce-kI-Yia"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="RO5-cO-xuK" secondAttribute="bottom" id="HdD-R6-BRX"/>
+                            <constraint firstItem="63F-Je-f6M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="JzC-jF-EIh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="63F-Je-f6M" secondAttribute="bottom" id="LG0-7z-84c"/>
+                            <constraint firstItem="gcl-B3-5hh" firstAttribute="top" secondItem="gMU-kZ-W3l" secondAttribute="bottom" constant="58" id="TJc-5T-IVx"/>
+                            <constraint firstItem="gMU-kZ-W3l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vn7-bK-9zL"/>
+                            <constraint firstItem="3oP-lJ-wqZ" firstAttribute="top" secondItem="gcl-B3-5hh" secondAttribute="bottom" constant="58" id="aLm-gA-qN6"/>
+                            <constraint firstItem="gcl-B3-5hh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="71" id="cfu-kL-q06"/>
+                            <constraint firstItem="63F-Je-f6M" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gK9-st-6Vu"/>
+                            <constraint firstAttribute="trailing" secondItem="63F-Je-f6M" secondAttribute="trailing" id="q1f-W2-EGZ"/>
+                            <constraint firstItem="gMU-kZ-W3l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="su2-vN-Vpe"/>
+                            <constraint firstAttribute="trailing" secondItem="RO5-cO-xuK" secondAttribute="trailing" id="z2V-fb-bcs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playBtn" destination="3oP-lJ-wqZ" id="s4x-yB-og3"/>
+                        <outlet property="timeLabel" destination="KG5-8l-naA" id="GLU-FI-Fcr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Oval" width="210" height="210"/>
+        <image name="bg" width="414" height="736"/>
+    </resources>
+</document>

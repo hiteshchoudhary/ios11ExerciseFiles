@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Futura.ttc">
+            <string>Futura-Bold</string>
+        </array>
+        <array key="Georgia.ttf">
+            <string>Georgia</string>
+        </array>
+        <array key="Palatino.ttc">
+            <string>Palatino-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Profiler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profiler" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40q-Vh-Ucj">
+                                <rect key="frame" x="147.5" y="20" width="79" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="20"/>
+                                <color key="textColor" red="0.99290054563492058" green="0.99290054563492058" blue="0.99290054563492058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocj-ey-CdG">
+                                <rect key="frame" x="61" y="77" width="252" height="203"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ent-6H-WXc">
+                                        <rect key="frame" x="12" y="16" width="229" height="171"/>
+                                        <color key="backgroundColor" red="0.50364192900822768" green="0.52244776556139483" blue="0.99570105820105825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ent-6H-WXc" firstAttribute="leading" secondItem="ocj-ey-CdG" secondAttribute="leading" constant="12" id="3kI-w8-9Ac"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ent-6H-WXc" secondAttribute="trailing" constant="11" id="A0M-6L-9QC"/>
+                                    <constraint firstItem="Ent-6H-WXc" firstAttribute="top" secondItem="ocj-ey-CdG" secondAttribute="top" constant="16" id="EvV-jY-7hB"/>
+                                    <constraint firstAttribute="width" constant="252" id="Kdv-OF-t5v"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ent-6H-WXc" secondAttribute="bottom" constant="16" id="h8y-eZ-P5s"/>
+                                    <constraint firstAttribute="height" constant="203" id="mPQ-3m-BGj"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Name is:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4I-M7-TUw">
+                                <rect key="frame" x="16" y="299" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="uXk-tF-85c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <color key="textColor" red="0.99570105820105825" green="0.99570105820105825" blue="0.99570105820105825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEl-uY-cup">
+                                <rect key="frame" x="16" y="331" width="343" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="8ZI-60-36j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="30"/>
+                                <color key="textColor" red="0.99570105819999999" green="0.99570105819999999" blue="0.99570105819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999-999-777" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HZM-nn-Byu">
+                                <rect key="frame" x="16" y="425" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="owd-B4-peH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <color key="textColor" red="0.99570105819999999" green="0.99570105819999999" blue="0.99570105819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9E-do-Wpg">
+                                <rect key="frame" x="16" y="521" width="343" height="57"/>
+                                <color key="backgroundColor" red="0.99570105820105825" green="0.23844087126247593" blue="0.19544679445410523" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="ir5-HE-mIb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="35"/>
+                                <state key="normal" title="Get Person">
+                                    <color key="titleColor" red="0.988606757728965" green="0.99570105820105825" blue="0.99231820490914058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="GetPersonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZQ-F5-n4R"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jane@janedoe.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lT6-LV-q6n">
+                                <rect key="frame" x="16" y="380" width="343" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Taq-vi-Tm9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <color key="textColor" red="0.99570105819999999" green="0.99570105819999999" blue="0.99570105819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12374958664021163" green="0.12374958664021163" blue="0.12374958664021163" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HZM-nn-Byu" secondAttribute="trailing" constant="16" id="2ZR-dD-B1Q"/>
+                            <constraint firstItem="x4I-M7-TUw" firstAttribute="top" secondItem="ocj-ey-CdG" secondAttribute="bottom" constant="19" id="3Kj-TG-yfq"/>
+                            <constraint firstItem="40q-Vh-Ucj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="49q-Lx-cka"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UEl-uY-cup" secondAttribute="trailing" constant="16" id="5dO-6F-Uan"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lT6-LV-q6n" secondAttribute="trailing" constant="16" id="D0s-Ag-aBQ"/>
+                            <constraint firstItem="ocj-ey-CdG" firstAttribute="top" secondItem="40q-Vh-Ucj" secondAttribute="bottom" constant="31" id="D4i-n0-v1b"/>
+                            <constraint firstItem="HZM-nn-Byu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Fqr-RA-xPi"/>
+                            <constraint firstItem="40q-Vh-Ucj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ITB-Tx-pAE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J9E-do-Wpg" secondAttribute="trailing" constant="16" id="Kfb-HP-IjL"/>
+                            <constraint firstItem="UEl-uY-cup" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="MSk-fE-XJW"/>
+                            <constraint firstItem="HZM-nn-Byu" firstAttribute="top" secondItem="lT6-LV-q6n" secondAttribute="bottom" constant="21" id="NYu-rk-sWP"/>
+                            <constraint firstItem="lT6-LV-q6n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="RfO-z9-4gJ"/>
+                            <constraint firstItem="ocj-ey-CdG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TE1-dQ-nRL"/>
+                            <constraint firstItem="J9E-do-Wpg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TeU-mu-2fj"/>
+                            <constraint firstItem="UEl-uY-cup" firstAttribute="top" secondItem="x4I-M7-TUw" secondAttribute="bottom" constant="8" id="fVl-Y4-3ZY"/>
+                            <constraint firstItem="lT6-LV-q6n" firstAttribute="top" secondItem="UEl-uY-cup" secondAttribute="bottom" constant="8" id="phy-5X-2Zv"/>
+                            <constraint firstItem="x4I-M7-TUw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="q0d-mi-Vtl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x4I-M7-TUw" secondAttribute="trailing" constant="16" id="rgG-NR-EAm"/>
+                            <constraint firstItem="x4I-M7-TUw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="uvz-7g-Xuq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="J9E-do-Wpg" secondAttribute="bottom" constant="89" id="wa1-LW-ogr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailLabel" destination="lT6-LV-q6n" id="5Sd-fS-aSf"/>
+                        <outlet property="imageView" destination="Ent-6H-WXc" id="FFV-Hu-y1a"/>
+                        <outlet property="nameLabel" destination="UEl-uY-cup" id="Rfl-Uh-V1A"/>
+                        <outlet property="phoneLabel" destination="HZM-nn-Byu" id="Aak-V1-gs7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>

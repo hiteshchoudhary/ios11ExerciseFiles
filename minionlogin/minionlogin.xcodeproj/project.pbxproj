@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D258C161F2D060500FD896E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258C151F2D060500FD896E /* AppDelegate.swift */; };
+		3D258C181F2D060500FD896E /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258C171F2D060500FD896E /* LoginVC.swift */; };
+		3D258C1B1F2D060500FD896E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D258C191F2D060500FD896E /* Main.storyboard */; };
+		3D258C1D1F2D060500FD896E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D258C1C1F2D060500FD896E /* Assets.xcassets */; };
+		3D258C201F2D060500FD896E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D258C1E1F2D060500FD896E /* LaunchScreen.storyboard */; };
+		3D258C281F2D06E400FD896E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D258C271F2D06D600FD896E /* GoogleService-Info.plist */; };
+		3D258C2A1F2D0B4600FD896E /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258C291F2D0B4600FD896E /* SignUpVC.swift */; };
+		3D258C2C1F2D0C2400FD896E /* SuccessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D258C2B1F2D0C2400FD896E /* SuccessVC.swift */; };
+		3D258C2F1F2D322200FD896E /* image.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3D258C2E1F2D321000FD896E /* image.jpeg */; };
+		4DEF68B64891DBAE7EC1BE41 /* Pods_minionlogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A30CF4BC37AB7C294315427 /* Pods_minionlogin.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3D258C121F2D060500FD896E /* minionlogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minionlogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D258C151F2D060500FD896E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D258C171F2D060500FD896E /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3D258C1A1F2D060500FD896E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D258C1C1F2D060500FD896E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D258C1F1F2D060500FD896E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D258C211F2D060500FD896E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D258C271F2D06D600FD896E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D258C291F2D0B4600FD896E /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		3D258C2B1F2D0C2400FD896E /* SuccessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessVC.swift; sourceTree = "<group>"; };
+		3D258C2E1F2D321000FD896E /* image.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpeg; sourceTree = "<group>"; };
+		7A30CF4BC37AB7C294315427 /* Pods_minionlogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_minionlogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD26485358C4EC8B090E195 /* Pods-minionlogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minionlogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-minionlogin/Pods-minionlogin.debug.xcconfig"; sourceTree = "<group>"; };
+		CC74173BE21D0D93E1D0857A /* Pods-minionlogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-minionlogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-minionlogin/Pods-minionlogin.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D258C0F1F2D060500FD896E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEF68B64891DBAE7EC1BE41 /* Pods_minionlogin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22FF03DCA5DD9E1F94ED11E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A30CF4BC37AB7C294315427 /* Pods_minionlogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D258C091F2D060500FD896E = {
+			isa = PBXGroup;
+			children = (
+				3D258C141F2D060500FD896E /* minionlogin */,
+				3D258C131F2D060500FD896E /* Products */,
+				680613FCED9C35077D2A2042 /* Pods */,
+				22FF03DCA5DD9E1F94ED11E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D258C131F2D060500FD896E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D258C121F2D060500FD896E /* minionlogin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D258C141F2D060500FD896E /* minionlogin */ = {
+			isa = PBXGroup;
+			children = (
+				3D258C151F2D060500FD896E /* AppDelegate.swift */,
+				3D258C2D1F2D0C4200FD896E /* Controllers */,
+				3D258C191F2D060500FD896E /* Main.storyboard */,
+				3D258C1C1F2D060500FD896E /* Assets.xcassets */,
+				3D258C2E1F2D321000FD896E /* image.jpeg */,
+				3D258C1E1F2D060500FD896E /* LaunchScreen.storyboard */,
+				3D258C211F2D060500FD896E /* Info.plist */,
+				3D258C271F2D06D600FD896E /* GoogleService-Info.plist */,
+			);
+			path = minionlogin;
+			sourceTree = "<group>";
+		};
+		3D258C2D1F2D0C4200FD896E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D258C171F2D060500FD896E /* LoginVC.swift */,
+				3D258C291F2D0B4600FD896E /* SignUpVC.swift */,
+				3D258C2B1F2D0C2400FD896E /* SuccessVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		680613FCED9C35077D2A2042 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDD26485358C4EC8B090E195 /* Pods-minionlogin.debug.xcconfig */,
+				CC74173BE21D0D93E1D0857A /* Pods-minionlogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D258C111F2D060500FD896E /* minionlogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D258C241F2D060500FD896E /* Build configuration list for PBXNativeTarget "minionlogin" */;
+			buildPhases = (
+				2BA48093AD031496C5701FB7 /* [CP] Check Pods Manifest.lock */,
+				3D258C0E1F2D060500FD896E /* Sources */,
+				3D258C0F1F2D060500FD896E /* Frameworks */,
+				3D258C101F2D060500FD896E /* Resources */,
+				1FA22D79AA46E5A9373854F8 /* [CP] Embed Pods Frameworks */,
+				8EBFA3C53BC3BF747C002756 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = minionlogin;
+			productName = minionlogin;
+			productReference = 3D258C121F2D060500FD896E /* minionlogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D258C0A1F2D060500FD896E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = studio;
+				TargetAttributes = {
+					3D258C111F2D060500FD896E = {
+						CreatedOnToolsVersion = 9.0;
+					};
+				};
+			};
+			buildConfigurationList = 3D258C0D1F2D060500FD896E /* Build configuration list for PBXProject "minionlogin" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D258C091F2D060500FD896E;
+			productRefGroup = 3D258C131F2D060500FD896E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D258C111F2D060500FD896E /* minionlogin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D258C101F2D060500FD896E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D258C2F1F2D322200FD896E /* image.jpeg in Resources */,
+				3D258C281F2D06E400FD896E /* GoogleService-Info.plist in Resources */,
+				3D258C201F2D060500FD896E /* LaunchScreen.storyboard in Resources */,
+				3D258C1D1F2D060500FD896E /* Assets.xcassets in Resources */,
+				3D258C1B1F2D060500FD896E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FA22D79AA46E5A9373854F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-minionlogin/Pods-minionlogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BA48093AD031496C5701FB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBFA3C53BC3BF747C002756 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-minionlogin/Pods-minionlogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D258C0E1F2D060500FD896E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D258C2C1F2D0C2400FD896E /* SuccessVC.swift in Sources */,
+				3D258C181F2D060500FD896E /* LoginVC.swift in Sources */,
+				3D258C2A1F2D0B4600FD896E /* SignUpVC.swift in Sources */,
+				3D258C161F2D060500FD896E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D258C191F2D060500FD896E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D258C1A1F2D060500FD896E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D258C1E1F2D060500FD896E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D258C1F1F2D060500FD896E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D258C221F2D060500FD896E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D258C231F2D060500FD896E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D258C251F2D060500FD896E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDD26485358C4EC8B090E195 /* Pods-minionlogin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = minionlogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.igneus.minionlogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D258C261F2D060500FD896E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC74173BE21D0D93E1D0857A /* Pods-minionlogin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = minionlogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.igneus.minionlogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D258C0D1F2D060500FD896E /* Build configuration list for PBXProject "minionlogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D258C221F2D060500FD896E /* Debug */,
+				3D258C231F2D060500FD896E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D258C241F2D060500FD896E /* Build configuration list for PBXNativeTarget "minionlogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D258C251F2D060500FD896E /* Debug */,
+				3D258C261F2D060500FD896E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D258C0A1F2D060500FD896E /* Project object */;
+}

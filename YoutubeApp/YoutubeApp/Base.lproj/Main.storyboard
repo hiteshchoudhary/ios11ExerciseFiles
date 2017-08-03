@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YoutubeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWs-XJ-VYi" customClass="YouTubePlayerView" customModule="YouTubePlayer_Swift">
+                                <rect key="frame" x="0.0" y="40" width="375" height="211"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WWs-XJ-VYi" secondAttribute="height" multiplier="16:9" id="FWv-bu-SyO"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X38-Tb-Gpg">
+                                <rect key="frame" x="29" y="282" width="115" height="40"/>
+                                <color key="backgroundColor" red="0.8523478835978836" green="0.13177521778547815" blue="0.10752238753236451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0aA-k1-Atq"/>
+                                    <constraint firstAttribute="width" constant="115" id="ZQc-o0-7J7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Previous">
+                                    <color key="titleColor" red="0.95772362764550267" green="0.93730844547638159" blue="0.95444515253473738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="previousTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ZR-wS-clB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbM-KS-3d2">
+                                <rect key="frame" x="223" y="282" width="115" height="40"/>
+                                <color key="backgroundColor" red="0.85234788360000002" green="0.13177521780000001" blue="0.1075223875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="cwM-Z7-lQT"/>
+                                    <constraint firstAttribute="width" constant="115" id="vHs-yH-6FV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.95772362759999996" green="0.93730844550000003" blue="0.95444515249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21M-Jg-dDR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k9-Oq-lVE">
+                                <rect key="frame" x="130" y="348" width="115" height="40"/>
+                                <color key="backgroundColor" red="0.85234788360000002" green="0.13177521780000001" blue="0.1075223875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="649-En-gdh"/>
+                                    <constraint firstAttribute="width" constant="115" id="Tzf-Wg-fvI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" red="0.95772362759999996" green="0.93730844550000003" blue="0.95444515249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rTc-ah-RPI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm0-tW-s2z">
+                                <rect key="frame" x="33" y="431" width="309" height="40"/>
+                                <color key="backgroundColor" red="0.85234788360000002" green="0.13177521780000001" blue="0.1075223875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="309" id="FVU-CU-zPc"/>
+                                    <constraint firstAttribute="height" constant="40" id="Y8B-Hq-0mB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Load Flex Video">
+                                    <color key="titleColor" red="0.95772362759999996" green="0.93730844550000003" blue="0.95444515249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JUl-ry-MVD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NFR-WV-hvN">
+                                <rect key="frame" x="33" y="491" width="309" height="40"/>
+                                <color key="backgroundColor" red="0.85234788360000002" green="0.13177521780000001" blue="0.1075223875" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5HO-tK-Xvt"/>
+                                    <constraint firstAttribute="width" constant="309" id="JMs-s2-KAO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <state key="normal" title="Load FlexBox Series">
+                                    <color key="titleColor" red="0.95772362759999996" green="0.93730844550000003" blue="0.95444515249999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loadPlaylist:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8u-dm-qpG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.084046378968253954" green="0.084046378968253954" blue="0.084046378968253954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="X38-Tb-Gpg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="CXE-Ag-0ZT"/>
+                            <constraint firstItem="8k9-Oq-lVE" firstAttribute="top" secondItem="X38-Tb-Gpg" secondAttribute="bottom" constant="26" id="HBg-AY-Lhu"/>
+                            <constraint firstItem="WWs-XJ-VYi" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="JhS-Xt-oql"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WbM-KS-3d2" secondAttribute="trailing" constant="37" id="Obj-E8-M4q"/>
+                            <constraint firstItem="hm0-tW-s2z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QzV-76-naY"/>
+                            <constraint firstItem="hm0-tW-s2z" firstAttribute="top" secondItem="8k9-Oq-lVE" secondAttribute="bottom" constant="43" id="Viu-fw-vYe"/>
+                            <constraint firstItem="WbM-KS-3d2" firstAttribute="top" secondItem="WWs-XJ-VYi" secondAttribute="bottom" constant="31" id="Ylb-6E-XBZ"/>
+                            <constraint firstItem="NFR-WV-hvN" firstAttribute="top" secondItem="hm0-tW-s2z" secondAttribute="bottom" constant="20" id="fGp-aH-XTQ"/>
+                            <constraint firstItem="X38-Tb-Gpg" firstAttribute="top" secondItem="WWs-XJ-VYi" secondAttribute="bottom" constant="31" id="ips-du-EKT"/>
+                            <constraint firstItem="WWs-XJ-VYi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="lbl-5A-CMq"/>
+                            <constraint firstItem="NFR-WV-hvN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pZi-qZ-tTv"/>
+                            <constraint firstItem="WWs-XJ-VYi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rSi-HP-NZq"/>
+                            <constraint firstItem="8k9-Oq-lVE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yal-TI-7Ja"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoView" destination="WWs-XJ-VYi" id="c6X-ES-Qc8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="240.80000000000001" y="144.3778110944528"/>
+        </scene>
+    </scenes>
+</document>

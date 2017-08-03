@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QOU-MO-p6d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cochin.ttc">
+            <string>Cochin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JLR-6S-xci">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="JU5-wV-ByL"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Wgp-VV-ulA"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JLR-6S-xci" secondAttribute="trailing" id="7q9-py-lkA"/>
+                            <constraint firstItem="JLR-6S-xci" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="gnU-BL-agr"/>
+                            <constraint firstItem="JLR-6S-xci" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lto-J8-NQp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JLR-6S-xci" secondAttribute="bottom" id="zxe-iR-V4L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7iD-bl-EVi"/>
+                    <connections>
+                        <outlet property="tableView" destination="JLR-6S-xci" id="cK5-OI-MbV"/>
+                        <segue destination="drI-7V-jsi" kind="show" identifier="hero" id="IgD-0p-c5b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360.80000000000001" y="134.48275862068968"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="RQD-Fh-Yo9">
+            <objects>
+                <viewController id="drI-7V-jsi" customClass="DetailVC" customModule="TableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ffo-q5-u86"/>
+                        <viewControllerLayoutGuide type="bottom" id="J4n-6p-h9y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zIy-Dh-yEJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stan lee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaE-rH-Vwi">
+                                <rect key="frame" x="104.5" y="305" width="165.5" height="58"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="50"/>
+                                <color key="textColor" red="0.98834364110710693" green="1" blue="0.99788613152480254" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.39868869339375601" blue="0.34758914334001945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QaE-rH-Vwi" firstAttribute="centerY" secondItem="zIy-Dh-yEJ" secondAttribute="centerY" id="PoB-K0-EWt"/>
+                            <constraint firstItem="QaE-rH-Vwi" firstAttribute="centerX" secondItem="zIy-Dh-yEJ" secondAttribute="centerX" id="ZUg-3i-evZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="heroLabel" destination="QaE-rH-Vwi" id="9PY-hZ-w7A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qh-Xs-97M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="134.48275862068968"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WfH-uB-W9q">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QOU-MO-p6d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fdy-Lg-Y9p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2Xp-Ii-8Vm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhl-zs-wY8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-508" y="134"/>
+        </scene>
+    </scenes>
+</document>
