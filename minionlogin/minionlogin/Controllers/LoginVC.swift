@@ -57,5 +57,13 @@ class LoginVC: UIViewController {
     }
     
     
+    //this code was added for git hub section
+    
+    func helloGit() {
+        print("Hello Git")
+    }
+    
+    
+    
 }
 
